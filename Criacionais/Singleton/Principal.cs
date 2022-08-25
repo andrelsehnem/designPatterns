@@ -3,20 +3,27 @@ Utilizado quando se necessita a existência de uma única instância de uma clas
 Cria uma classe que deixa o construtor privado, ficando disponível uma função que vai verificar se a instância está vazia, para então assim criá-lo, assim vai somente existir uma instância deste objeto, não mais.
 */
 namespace designPatterns{
-    public sealed class ProdutoRepository{
-        private readonly IList<Produto> _produtos;
-        private static ProdutoRepository? _instancia = null;
+    class Principal{
+        private void inicio(){
+            var repositorio = ProdutoRepository.GetInstance();
 
-        private ProdutoRepository(){
-            _produtos = new List<Produto>();
-        }
+            var lista1 = repositorio.GetAll();
 
-        public static ProdutoRepository GetInstance(){
-            if(_instancia != null ) return _instancia;
-            else _instancia = new ProdutoRepository();
-            return _instancia;
+            repositorio.Insert(new Produto{
+                 Id = 1, Name = "AAA", Price = 12 });
+            repositorio.Insert(new Produto { 
+                Id = 2, Name = "BBBB", Price = 33 });
+
+            var lista2 = repositorio.GetAll();
+
+            var repositorio2 = ProdutoRepository.GetInstance();
+
+            var lista3 = repositorio2.GetAll();
+
+            Console.WriteLine("");
         }
     }
+
 }
 
 

@@ -3,7 +3,7 @@ namespace designPatterns{
         private readonly IList<Produto> _produtos;
         private static ProdutoRepository? _instancia = null;
 
-        private ProdutoRepository(){
+        private ProdutoRepository(){ 
             _produtos = new List<Produto>();
         }
 
