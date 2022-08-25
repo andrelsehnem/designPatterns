@@ -19,15 +19,15 @@ namespace designPatterns
                 switch (Console.ReadLine()){
                 case "1":
                     Console.Clear();
-                    Console.WriteLine("a");
+                    callMenuCriacionais();
                     break;
                 case "2":
                     Console.Clear();
-                    Console.WriteLine("b");
+                    callMenuEstruturais();
                     break;
                 case "3":
                     Console.Clear();
-                    Console.WriteLine("c");
+                    callMenuComportamentais();
                     break;
                 case "x":
                     a = false;
@@ -45,6 +45,30 @@ namespace designPatterns
             Console.WriteLine("1- Criacionais");
             Console.WriteLine("2- Estruturais");
             Console.WriteLine("3- Comportamentais");
+        }
+
+        public void callMenuCriacionais()
+        {
+            Console.WriteLine("1- Criacionais");
+            Console.WriteLine("1- Singleton");
+            Console.WriteLine("2- Prototype");
+            Console.WriteLine("3- Factory Method");
+        }
+
+        public void callMenuEstruturais()
+        {
+            Console.WriteLine("2- Estruturais");
+            Console.WriteLine("1- ");
+            Console.WriteLine("2- ");
+            Console.WriteLine("3- ");
+        }
+
+        public void callMenuComportamentais()
+        {
+            Console.WriteLine("3- Comportamentais");
+            Console.WriteLine("1- ");
+            Console.WriteLine("2- ");
+            Console.WriteLine("3- ");
         }
     }
 }
