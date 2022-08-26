@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Criacionais",
+    "\\Criacionais\\Prototype",
     "\\Criacionais\\Singleton"
   ],
-  "SelectedNode": "\\Criacionais\\Singleton\\Principal.cs",
+  "SelectedNode": "\\Criacionais\\Prototype\\Classe.cs",
   "PreviewInSolutionExplorer": false
 }
