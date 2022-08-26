@@ -55,11 +55,13 @@ namespace designPatterns
                 switch (Console.ReadLine()){
                 case "1":
                     Console.Clear();
-                    Principal p = new();
-                    p.inicio();
+                    Singleton s = new();
+                    s.inicio();
                     break;
                 case "2":
                     Console.Clear();
+                    Prototype p = new();
+                    p.inicio();
                     break;
                 case "3":
                     Console.Clear();

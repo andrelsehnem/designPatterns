@@ -3,7 +3,7 @@ Utilizado quando se necessita a existência de uma única instância de uma clas
 Cria uma classe que deixa o construtor privado, ficando disponível uma função que vai verificar se a instância está vazia, para então assim criá-lo, assim vai somente existir uma instância deste objeto, não mais.
 */
 namespace designPatterns{
-    class Principal{
+    class Singleton{
         public void inicio(){
             var repositorio = ProdutoRepository.GetInstance();
 
