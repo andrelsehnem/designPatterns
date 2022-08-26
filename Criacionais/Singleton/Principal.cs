@@ -4,11 +4,11 @@ Cria uma classe que deixa o construtor privado, ficando disponível uma função
 */
 namespace designPatterns{
     class Principal{
-        private void inicio(){
+        public void inicio(){
             var repositorio = ProdutoRepository.GetInstance();
 
             var lista1 = repositorio.GetAll();
-
+            Console.WriteLine(lista1.Count);
             repositorio.Insert(new Produto{
                  Id = 1, Name = "AAA", Price = 12 });
             repositorio.Insert(new Produto { 
@@ -20,7 +20,9 @@ namespace designPatterns{
 
             var lista3 = repositorio2.GetAll();
 
-            Console.WriteLine("");
+            Console.WriteLine("Lista 1: " + lista1.Count);
+            Console.WriteLine("Lista 2: " + lista2.Count);
+            Console.WriteLine("Lista 3: " + lista3.Count);
         }
     }
 

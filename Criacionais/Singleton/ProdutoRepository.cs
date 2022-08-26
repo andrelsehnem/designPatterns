@@ -1,6 +1,6 @@
 namespace designPatterns{
     public sealed class ProdutoRepository{
-        private readonly IList<Produto> _produtos;
+        private IList<Produto> _produtos;
         private static ProdutoRepository? _instancia = null;
 
         private ProdutoRepository(){ 

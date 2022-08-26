@@ -1,6 +1,4 @@
-﻿using System;
-using static System.Console;
-using static System.Convert;
+﻿using designPatterns;
 
 namespace designPatterns 
 {
@@ -49,10 +47,31 @@ namespace designPatterns
 
         public void callMenuCriacionais()
         {
-            Console.WriteLine("1- Criacionais");
-            Console.WriteLine("1- Singleton");
-            Console.WriteLine("2- Prototype");
-            Console.WriteLine("3- Factory Method");
+            bool a2 = true;
+            while(a2){
+                Console.WriteLine("1- Singleton");
+                Console.WriteLine("2- Prototype");
+                Console.WriteLine("3- Factory Method");
+                switch (Console.ReadLine()){
+                case "1":
+                    Console.Clear();
+                    Principal p = new();
+                    p.inicio();
+                    break;
+                case "2":
+                    Console.Clear();
+                    break;
+                case "3":
+                    Console.Clear();
+                    break;
+                case "x":
+                    a2 = false;
+                    break;
+                default:
+                    Console.Clear();
+                    break;
+                }
+            }
         }
 
         public void callMenuEstruturais()
