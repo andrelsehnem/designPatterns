@@ -10,13 +10,16 @@ namespace designPatterns{
             var lista1 = repositorio.GetAll();
             Console.WriteLine(lista1.Count);
             repositorio.Insert(new Produto{
-                 Id = 1, Name = "AAA", Price = 12 });
+                id = 1, nome = "AAA", preco = 12 });
             repositorio.Insert(new Produto { 
-                Id = 2, Name = "BBBB", Price = 33 });
+                id = 2, nome = "BBB", preco = 33 });
 
             var lista2 = repositorio.GetAll();
 
             var repositorio2 = ProdutoRepository.GetInstance();
+            
+            repositorio2.Insert(new Produto { 
+                id = 3, nome = "CCC", preco = 200 });
 
             var lista3 = repositorio2.GetAll();
 

@@ -67,6 +67,8 @@ namespace designPatterns
                     break;
                 case "3":
                     Console.Clear();
+                    Factory.Factory f = new();
+                    f.inicio();
                     break;
                 case "x":
                     a2 = false;

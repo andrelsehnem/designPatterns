@@ -1,7 +1,7 @@
 namespace designPatterns.Prototype
 {
     class Arma{
-        public string nome {get; set;}
+        public string? nome {get; set;}
 
 
         //Clonar o personagem sem repedir a arma

@@ -2,7 +2,7 @@ using designPatterns.Prototype;
 
 namespace designPatterns{
     class Personagem:ICloneable{
-        public string nome {get; set;}
+        public string? nome {get; set;}
         public Classe classe{get; set;}
         public Arma arma{get; set;}
 
