@@ -43,6 +43,7 @@ namespace designPatterns
             Console.WriteLine("1- Criacionais");
             Console.WriteLine("2- Estruturais");
             Console.WriteLine("3- Comportamentais");
+            Console.WriteLine("x- Encerrar");
         }
         public void callMenuCriacionais()
         {
@@ -54,6 +55,7 @@ namespace designPatterns
                 Console.WriteLine("1- Singleton");
                 Console.WriteLine("2- Prototype");
                 Console.WriteLine("3- Factory Method");
+                Console.WriteLine("x- Retornar");
                 switch (Console.ReadLine()){
                 case "1":
                     Console.Clear();
@@ -88,9 +90,10 @@ namespace designPatterns
                 Console.WriteLine("--------------");
                 Console.WriteLine("2- Estruturais");
                 Console.WriteLine("--------------");
-                Console.WriteLine("1- ");
-                Console.WriteLine("2- ");
-                Console.WriteLine("3- ");
+                Console.WriteLine("1- Adapter");
+                Console.WriteLine("2- Bridge");
+                Console.WriteLine("3- Composite");
+                Console.WriteLine("x- Retornar");
                 switch (Console.ReadLine()){
                 case "1":
                     Console.Clear();
@@ -119,9 +122,10 @@ namespace designPatterns
                 Console.WriteLine("------------------");
                 Console.WriteLine("3- Comportamentais");
                 Console.WriteLine("------------------");
-                Console.WriteLine("1- ");
-                Console.WriteLine("2- ");
-                Console.WriteLine("3- ");
+                Console.WriteLine("1- Chain of Responsibility");
+                Console.WriteLine("2- Memento");
+                Console.WriteLine("3- Strategy");
+                Console.WriteLine("x- Retornar");
                 switch (Console.ReadLine()){
                 case "1":
                     Console.Clear();
