@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Text;
 
 namespace designPatterns.Factory
@@ -43,8 +42,5 @@ namespace designPatterns.Factory
         private string Desligar(){
             return "Desligando " + nome  + "\n";
         }       
-
-
-
     }
 }

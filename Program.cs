@@ -129,6 +129,8 @@ namespace designPatterns
                 switch (Console.ReadLine()){
                 case "1":
                     Console.Clear();
+                    ChainOfResponsability.Chain c = new();
+                    c.inicio();
                     break;
                 case "2":
                     Console.Clear();

@@ -50,9 +50,8 @@ namespace designPatterns.Prototype
             magia = 6;
             defesa = 7;
         }
-        
 
-        //Clonar o personagem sem repedir a arma
+        //Clonar o personagem sem repedir a classe
         public object Clone(){
             return (Classe)this.MemberwiseClone();
         }
