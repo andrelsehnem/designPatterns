@@ -6,12 +6,11 @@ namespace designPatterns.Memento{
     public class MementoClass: ICaretaker, IOrigem {
         private double primeiroNumero;
         private double segundoNumero;
-        private char ope;
-        public MementoClass(double num1, char _ope, double num2){
+        private string ope;
+        public MementoClass(double num1, string _ope, double num2){
             primeiroNumero = num1;
             ope = _ope;
             segundoNumero = num2;
-
         }
 
         public double GetPrimeiroNumero(){
@@ -22,7 +21,7 @@ namespace designPatterns.Memento{
             return segundoNumero;
         }
 
-        public char GetOperacao(){
+        public string GetOperacao(){
             return ope;
         }
     }

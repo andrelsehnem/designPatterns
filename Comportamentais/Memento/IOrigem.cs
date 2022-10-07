@@ -3,7 +3,7 @@ namespace designPatterns.Memento{
 //permite restaurar seu estado
         double GetPrimeiroNumero();
         double GetSegundoNumero();
-        char GetOperacao();
+        string GetOperacao();
 
    }
 }

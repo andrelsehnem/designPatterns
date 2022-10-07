@@ -11,7 +11,7 @@ namespace designPatterns.Memento{
         double GetCalculoResultado();
         void SetPrimeiroNumero(double num1);
         void SetSegundoNumero(double num2);
-        void SetOperacao(char ope);
+        void SetOperacao(string ope);
     }
    
 }

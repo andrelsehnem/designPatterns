@@ -2,7 +2,7 @@ namespace designPatterns.Memento{
     public class Calculadora: ICalculadora {
         private double primeiroNumero;
         private double segundoNumero;
-        private char ope;
+        private string ope;
 
         public ICaretaker BackupUltimoCalculo(){
             //cria o obj memento usado para restaurar os dois numeros
@@ -11,16 +11,16 @@ namespace designPatterns.Memento{
 
         public double GetCalculoResultado(){
             switch (ope){
-                case '+':
+                case "+":
                     return primeiroNumero + segundoNumero;
-                case '-':
+                case "-":
                     return primeiroNumero - segundoNumero;
-                case '*':
-                    return primeiroNumero + segundoNumero;
-                case '/':
+                case "*":
                     return primeiroNumero * segundoNumero;
-                default:
+                case "/":
                     return primeiroNumero / segundoNumero;
+                default:
+                    return 0;
             }
         }
 
@@ -38,7 +38,7 @@ namespace designPatterns.Memento{
             segundoNumero = num2;
         }
 
-        public void SetOperacao(char _ope){
+        public void SetOperacao(string _ope){
             ope = _ope;
         }
 
