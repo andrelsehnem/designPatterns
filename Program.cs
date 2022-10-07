@@ -134,6 +134,7 @@ namespace designPatterns
                     break;
                 case "2":
                     Console.Clear();
+                    Memento.Memento m = new();
                     break;
                 case "3":
                     Console.Clear();
