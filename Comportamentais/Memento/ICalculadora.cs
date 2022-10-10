@@ -9,6 +9,7 @@ namespace designPatterns.Memento{
 
 //serviços do originator
         double GetCalculoResultado();
+        string GetCalculoResultado2();
         void SetPrimeiroNumero(double num1);
         void SetSegundoNumero(double num2);
         void SetOperacao(string ope);

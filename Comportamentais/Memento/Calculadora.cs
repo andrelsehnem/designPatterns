@@ -24,6 +24,10 @@ namespace designPatterns.Memento{
             }
         }
 
+        public string GetCalculoResultado2(){
+            return primeiroNumero + " " + ope + " " + segundoNumero + " = " + GetCalculoResultado();
+        }
+
         public void RestauraUltimoCalculo(ICaretaker memento){
             primeiroNumero = ((IOrigem)memento).GetPrimeiroNumero();
             ope = ((IOrigem)memento).GetOperacao();

@@ -7,7 +7,9 @@ namespace designPatterns.Memento{
         private double numero1, numero2;
         private string ope;
         private bool opeVal = false;
-        private Calculadora calc = new();
+        //private Calculadora calc = new();
+        private ICalculadora calcInt = new Calculadora();
+        ICaretaker meme;
         public void inicio(){
             Console.Clear();
             bool b = true;
@@ -31,7 +33,9 @@ namespace designPatterns.Memento{
                     Calculo();
                     return true;
                 case "<":
-
+                    calcInt.RestauraUltimoCalculo(meme);
+                    Console.Clear();
+                    Console.WriteLine(calcInt.GetCalculoResultado2());
                     return true;
                 case "x":
                     return false;
@@ -43,20 +47,23 @@ namespace designPatterns.Memento{
             Console.Clear();
             Console.WriteLine("Digite o primeiro numero:");
             numero1 = Convert.ToDouble(Console.ReadLine());
-            calc.SetPrimeiroNumero(numero1);
+            calcInt.SetPrimeiroNumero(numero1);
             Console.WriteLine("Digite a operação:");
             opeVal = false;
             while(!opeVal){
                 ope = Console.ReadLine();
                 if(ope.Equals("+") ||ope.Equals("-")||ope.Equals("*") ||ope.Equals("/")){
-                    calc.SetOperacao(ope);
+                    calcInt.SetOperacao(ope);
                     opeVal = true;
                 }
+                else Console.WriteLine("Digite uma operação correta");
             }
             Console.WriteLine("Digite o segundo numero:");
             numero2 = Convert.ToDouble(Console.ReadLine());
-            calc.SetSegundoNumero(numero2);
-            Console.WriteLine("Resultado: " + calc.GetCalculoResultado());
+            calcInt.SetSegundoNumero(numero2);
+            Console.Clear();
+            Console.WriteLine("Resultado: " + calcInt.GetCalculoResultado());
+            meme = calcInt.BackupUltimoCalculo();
         }
     }
 }
