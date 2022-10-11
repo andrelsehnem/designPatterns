@@ -97,12 +97,17 @@ namespace designPatterns
                 switch (Console.ReadLine()){
                 case "1":
                     Console.Clear();
+                    Adapter.Adapterr a = new();
+                    a.Inicio();
                     break;
                 case "2":
                     Console.Clear();
+                    Bridge.Bridge b = new();
                     break;
                 case "3":
                     Console.Clear();
+                    Composite.Composite c = new();
+                    c.Inicio();
                     break;
                 case "x":
                     a2 = false;

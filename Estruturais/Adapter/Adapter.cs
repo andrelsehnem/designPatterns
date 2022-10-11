@@ -1,5 +1,5 @@
 namespace designPatterns.Adapter{
-    class Adapter{
+    class Adapterr{
         public void Inicio(){
             Console.Clear();
             bool b = true;
