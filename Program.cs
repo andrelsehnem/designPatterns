@@ -139,6 +139,8 @@ namespace designPatterns
                     break;
                 case "3":
                     Console.Clear();
+                    Strategy.Strategy s = new();
+                    s.Inicio();
                     break;
                 case "x":
                     a2 = false;
