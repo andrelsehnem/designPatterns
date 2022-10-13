@@ -1,11 +1,11 @@
-namespace designPatterns.Bridge{
-    class Bridge{
+namespace designPatterns.Facade{
+    class Facade{
         public void Inicio(){
             Console.Clear();
             bool b = true;
             while(b){
                 Console.WriteLine(" --   --   -- ");
-                Console.WriteLine(" -- Bridge -- ");
+                Console.WriteLine(" -- Facade -- ");
                 Console.WriteLine(" --   --   -- ");
                 Console.WriteLine("");
                 b = Menu();

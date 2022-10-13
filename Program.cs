@@ -102,7 +102,7 @@ namespace designPatterns
                     break;
                 case "2":
                     Console.Clear();
-                    Bridge.Bridge b = new();
+                    Facade.Facade b = new();
                     break;
                 case "3":
                     Console.Clear();
