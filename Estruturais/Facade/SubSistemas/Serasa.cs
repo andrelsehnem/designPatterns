@@ -6,6 +6,7 @@ namespace designPatterns.Facade{
                 Console.WriteLine($"Esta no SERASA");
                 return true;
             }
+            Console.WriteLine($"Liberação Serasa: Ok");
             return false;
         }
     }

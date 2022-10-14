@@ -6,6 +6,7 @@ namespace designPatterns.Facade{
                 Console.WriteLine($"Esta no CADIN");
                 return true;
             }
+            Console.WriteLine($"Liberação CADIN: Ok");
             return false;
         }
     }

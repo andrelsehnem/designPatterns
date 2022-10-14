@@ -91,7 +91,7 @@ namespace designPatterns
                 Console.WriteLine("2- Estruturais");
                 Console.WriteLine("--------------");
                 Console.WriteLine("1- Adapter");
-                Console.WriteLine("2- Bridge");
+                Console.WriteLine("2- Facade");
                 Console.WriteLine("3- Composite");
                 Console.WriteLine("x- Retornar");
                 switch (Console.ReadLine()){
@@ -103,6 +103,7 @@ namespace designPatterns
                 case "2":
                     Console.Clear();
                     Facade.Facade b = new();
+                    b.Inicio();
                     break;
                 case "3":
                     Console.Clear();

@@ -13,8 +13,23 @@ namespace designPatterns.Facade{
         }
 
         public bool ConcederEmprestimo(Cliente cliente, double valor){
+            Console.WriteLine($"Verificando condições para liberação de empréstimo para o cliente {cliente.nome}");
 
-            return false;  
+            bool ConcederEmprestimo = true;
+
+            if (serasa.EstaNoSerasa(cliente)){
+                ConcederEmprestimo = false;
+            }
+
+            if (cadin.EstaNoCadin(cliente)){
+                ConcederEmprestimo = false;
+            }
+
+            if (!limite.PossuiLimite(cliente, valor)){
+                ConcederEmprestimo = false;
+            }
+
+            return ConcederEmprestimo;  
         }
     }
 }
