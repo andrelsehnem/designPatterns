@@ -33,5 +33,3 @@ namespace designPatterns.Facade{
         }
     }
 }
-
-// minuto 10:40 https://www.youtube.com/watch?v=QKcwvOJexqg&ab_channel=JoseCarlosMacoratti

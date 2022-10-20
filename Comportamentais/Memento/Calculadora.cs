@@ -46,6 +46,5 @@ namespace designPatterns.Memento{
             ope = _ope;
         }
 
-        //parei minuto 12:11 do video
     }
 }

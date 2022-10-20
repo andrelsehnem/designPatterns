@@ -39,9 +39,6 @@ namespace designPatterns.Adapter.Adapter{
 
             sistemaSalario.CalculaSalario(listaProgramador);
 
-            //parei min 13:00  https://www.youtube.com/watch?v=HElHbc0yvl8&ab_channel=JoseCarlosMacoratti
-            
-
         }
 
 
